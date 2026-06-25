@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matis Percheron — Sites web & visibilité Google pour les commerces de Grenoble</title>
+<meta name="description" content="Création de sites web et gestion de fiche Google pour les commerces de Grenoble. Sites soignés, visibilité locale, prix accessibles. Premier échange gratuit.">
+<meta property="og:title" content="Matis Percheron — Sites web & visibilité Google, Grenoble">
+<meta property="og:description" content="Sites web à votre image et fiche Google bien gérée pour les commerces grenoblois. Prix accessibles, contact direct.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Matis Percheron — Web & Visibilité locale",
+  "description": "Création de sites web et gestion de fiche Google pour les commerces de Grenoble.",
+  "areaServed": "Grenoble",
+  "telephone": "+33769826809",
+  "email": "contact@webmatis.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Grenoble",
+    "postalCode": "38000",
+    "addressCountry": "FR"
+  },
+  "knowsAbout": ["Création de site web", "SEO local", "Google Business Profile", "Référencement local"]
+}
+</script>
+</head>
+<body>
+<div id="root" style="--bg:#f7f8fa;--bg-2:#eef1f6;--surface:#ffffff;--ink:#16181d;--ink-2:#5b6170;--line:#e3e7ee;--accent:#2563eb;--accent-2:#1d4ed8;--accent-ink:#ffffff;--accent-soft:#dbe6fe;--nav-bg:rgba(247,248,250,.82);--font-title:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip;">
+
+  <!-- NAV -->
+  <nav id="site-nav" style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(18px,5vw,56px);background:var(--nav-bg);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);transition:box-shadow .3s ease;">
+    <a href="#top" aria-label="Matis Percheron" style="display:flex;align-items:center;gap:12px;text-decoration:none;flex:none;">
+      <span style="font-family:var(--font-title);font-weight:700;font-size:1.3rem;letter-spacing:-.02em;color:var(--ink);">Matis Percheron<span style="color:var(--accent);">.</span></span>
+      <span class="nav-region" style="font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-2);font-weight:600;padding-left:13px;border-left:1px solid var(--line);">Grenoble</span>
+    </a>
+    <div data-navlinks="1" class="navlinks" style="display:flex;align-items:center;gap:30px;font-size:14.5px;font-weight:500;letter-spacing:.01em;">
+      <a href="#services" class="link-underline">Services</a>
+      <a href="#pourquoi" class="link-underline">Les chiffres</a>
+      <a href="#realisations" class="link-underline">Réalisations</a>
+      <a href="#tarifs" class="link-underline">Tarifs</a>
+      <a href="#faq" class="link-underline">FAQ</a>
+      <a href="#contact" class="link-underline">Contact</a>
+    </div>
+    <a href="#contact" class="btn-accent nav-phone" style="display:inline-flex;align-items:center;gap:9px;flex:none;text-decoration:none;font-weight:700;font-size:14.5px;letter-spacing:.01em;padding:11px 18px;border-radius:8px;white-space:nowrap;">
+      Me contacter
+    </a>
+    <button type="button" id="nav-burger" class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-panel">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div id="panel-backdrop" class="panel-backdrop"></div>
+  <aside id="mobile-panel" class="mobile-panel" aria-hidden="true" aria-label="Menu">
+    <div class="mobile-panel-head">
+      <span style="font-family:var(--font-title);font-weight:700;font-size:1.25rem;color:var(--ink);">Menu</span>
+      <button type="button" id="panel-close" class="panel-close" aria-label="Fermer le menu">&times;</button>
+    </div>
+    <nav class="mobile-panel-links">
+      <a href="#services" data-panel-link>Services</a>
+      <a href="#pourquoi" data-panel-link>Les chiffres</a>
+      <a href="#realisations" data-panel-link>Réalisations</a>
+      <a href="#tarifs" data-panel-link>Tarifs</a>
+      <a href="#faq" data-panel-link>FAQ</a>
+      <a href="#contact" data-panel-link>Contact</a>
+    </nav>
+    <div class="mobile-panel-cta">
+      <a href="tel:0769826809" class="btn-accent" style="width:100%;">Appeler · 07 69 82 68 09</a>
+      <a href="mailto:contact@webmatis.fr" class="btn-outline" style="width:100%;">M'écrire un email</a>
+    </div>
+  </aside>
+
+  <!-- HERO -->
+  <header id="top" class="hero-section" style="position:relative;padding:clamp(40px,7vw,90px) clamp(18px,5vw,56px) clamp(28px,4vw,56px);">
+    <div data-hero="1" class="hero-grid" style="display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center;max-width:1240px;margin:0 auto;">
+      <div data-reveal="1">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:22px;">
+          <span style="width:26px;height:1.5px;background:var(--accent);display:inline-block;"></span>Sites web &amp; visibilité Google · Grenoble
+        </div>
+        <h1 style="font-family:var(--font-title);font-weight:700;font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.03em;margin:0 0 22px;color:var(--ink);">Vos clients vous cherchent<br><span style="color:var(--accent);">sur Google.</span> Soyez visible.</h1>
+        <p style="font-size:clamp(1.05rem,1.6vw,1.2rem);line-height:1.65;color:var(--ink-2);max-width:32em;margin:0 0 32px;">Je crée des sites web à votre image et je gère votre fiche Google, pour les commerces grenoblois qui veulent développer leur visibilité.</p>
+        <div class="hero-cta" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
+          <a href="#tarifs" class="btn-accent btn-lg">Voir mes tarifs
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block;"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a href="tel:0769826809" class="btn-outline btn-lg">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
+            07 69 82 68 09
+          </a>
+        </div>
+        <p style="font-size:13px;color:var(--ink-2);margin:18px 0 0;letter-spacing:.01em;">Premier échange gratuit, sans engagement.</p>
+      </div>
+
+      <!-- Visuel : aperçu d'une fiche Google (ce que Matis optimise) -->
+      <div data-reveal="1" class="hero-visual" style="position:relative;max-width:430px;margin:0 0 0 auto;">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 40px 70px -42px rgba(20,40,90,.35);overflow:hidden;">
+          <!-- bandeau photo -->
+          <div style="position:relative;height:148px;background:#1d4ed8;background-image:url('assets/grenoble-hero.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:16px 18px;">
+            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,30,70,.10),rgba(15,30,70,.66));"></span>
+            <span style="position:relative;color:#fff;font-family:var(--font-title);font-weight:700;font-size:1.45rem;letter-spacing:-.01em;text-shadow:0 1px 10px rgba(0,0,0,.4);">Votre commerce</span>
+            <span style="position:absolute;top:12px;right:12px;background:rgba(255,255,255,.92);border-radius:6px;padding:4px 9px;font-size:11px;font-weight:600;color:var(--ink);">+ photos</span>
+          </div>
+          <!-- corps de la fiche -->
+          <div style="padding:18px 20px 22px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+              <span style="font-family:var(--font-title);font-weight:700;font-size:1.35rem;color:var(--ink);">4,9</span>
+              <span style="color:#f59e0b;font-size:15px;letter-spacing:1px;">★★★★★</span>
+              <span style="font-size:13px;color:var(--ink-2);">756 avis</span>
+            </div>
+            <div style="font-size:13.5px;color:var(--ink-2);margin-bottom:18px;">Commerce à Grenoble · <span style="color:#0f9d58;font-weight:600;">Ouvert</span> · ferme à 19h</div>
+            <!-- actions façon Google -->
+            <div style="display:flex;gap:6px;margin-bottom:20px;">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+                <span style="width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--accent);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 22 2l-9 19-2-8-8-2Z"></path></svg></span>
+                <span style="font-size:10.5px;color:var(--accent);font-weight:500;">Itinéraire</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+                <span style="width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--accent);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg></span>
+                <span style="font-size:10.5px;color:var(--accent);font-weight:500;">Appeler</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+                <span style="width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--accent);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"></path></svg></span>
+                <span style="font-size:10.5px;color:var(--accent);font-weight:500;">Site web</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+                <span style="width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--accent);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="m8.6 13.5 6.8 4M15.4 6.5 8.6 10.5"></path></svg></span>
+                <span style="font-size:10.5px;color:var(--accent);font-weight:500;">Partager</span>
+              </div>
+            </div>
+            <!-- infos -->
+            <div style="border-top:1px solid var(--line);padding-top:15px;display:flex;flex-direction:column;gap:11px;">
+              <div style="display:flex;align-items:center;gap:11px;font-size:13px;color:var(--ink-2);">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;opacity:.7;"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>12 rue de la République, Grenoble</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:11px;font-size:13px;color:var(--ink-2);">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;opacity:.7;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
+                <span>04 76 00 00 00</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:11px;font-size:13px;color:var(--accent);font-weight:500;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"></path></svg>
+                <span>votre-site.fr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pastille flottante -->
+        <div class="float-card" style="position:absolute;left:-16px;bottom:-16px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);padding:11px 15px;border-radius:12px;box-shadow:0 24px 44px -26px rgba(20,40,90,.4);">
+          <svg viewBox="0 0 24 24" width="22" height="22" style="flex:none;display:block;"><path fill="#4285F4" d="M22.5 12.2c0-.7-.06-1.4-.18-2H12v3.8h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-2 3.2-4.8 3.2-7.8Z"></path><path fill="#34A853" d="M12 23c2.9 0 5.4-1 7.2-2.6l-3.6-2.7c-1 .7-2.3 1.1-3.6 1.1-2.8 0-5.1-1.9-6-4.4H2.3v2.8A11 11 0 0 0 12 23Z"></path><path fill="#FBBC05" d="M6 14.4a6.6 6.6 0 0 1 0-4.2V7.4H2.3a11 11 0 0 0 0 9.8L6 14.4Z"></path><path fill="#EA4335" d="M12 5.4c1.6 0 3 .55 4.1 1.6l3.1-3.1A11 11 0 0 0 2.3 7.4L6 10.2c.9-2.6 3.2-4.4 6-4.4Z"></path></svg>
+          <div>
+            <div style="font-family:var(--font-title);font-weight:700;font-size:.95rem;line-height:1.1;color:var(--ink);">Bien classé</div>
+            <div style="font-size:11.5px;color:var(--ink-2);margin-top:2px;">sur Google &amp; Maps</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services" style="padding:clamp(56px,9vw,118px) clamp(18px,5vw,56px);">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div data-reveal="1" style="max-width:42em;margin:0 auto clamp(38px,5vw,58px);text-align:center;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">Ce que je fais</div>
+        <h2 style="font-family:var(--font-title);font-weight:700;letter-spacing:-.02em;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;margin:0 0 16px;color:var(--ink);">Deux façons de vous rendre visible</h2>
+        <p style="font-size:1.1rem;line-height:1.7;color:var(--ink-2);margin:0;">Un site web pour exister en ligne, une fiche Google bien tenue pour être trouvé près de chez vous. Séparément ou ensemble.</p>
+      </div>
+
+      <div class="services-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,28px);">
+
+        <!-- Service 1 : Site web -->
+        <div data-reveal="1" class="service-card" style="background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(26px,3.5vw,40px);">
+          <div style="width:52px;height:52px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:22px;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M2 7h20M8 21h8M12 17v4"></path></svg>
+          </div>
+          <h3 style="font-family:var(--font-title);font-weight:700;font-size:1.55rem;letter-spacing:-.01em;margin:0 0 12px;color:var(--ink);">Création de site web</h3>
+          <p style="font-size:1.02rem;line-height:1.65;color:var(--ink-2);margin:0 0 22px;">Un site clair, rapide et fait pour le mobile. Vos infos, votre carte ou vos services, vos avis, un contact facile. En ligne en une semaine.</p>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li class="feat">Design sur-mesure, adapté mobile</li>
+            <li class="feat">Nom de domaine + mise en ligne inclus</li>
+            <li class="feat">Prêt à apparaître sur Google</li>
+            <li class="feat">Search Console &amp; sitemap configurés</li>
+            <li class="feat">Textes rédigés avec vous</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 : Visibilité Google -->
+        <div data-reveal="1" class="service-card" style="background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(26px,3.5vw,40px);">
+          <div style="width:52px;height:52px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:22px;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h3 style="font-family:var(--font-title);font-weight:700;font-size:1.55rem;letter-spacing:-.01em;margin:0 0 12px;color:var(--ink);">Visibilité Google locale</h3>
+          <p style="font-size:1.02rem;line-height:1.65;color:var(--ink-2);margin:0 0 22px;">Votre fiche Google, c'est votre première vitrine. Je la gère pour vous : vous remontez dans les recherches « près de moi » et sur Google Maps.</p>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li class="feat">Votre fiche Google : infos, photos, horaires à jour</li>
+            <li class="feat">Posts réguliers programmés</li>
+            <li class="feat">Collecte et gestion des avis clients</li>
+            <li class="feat">Rapport simple chaque mois</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI C'EST IMPORTANT -->
+  <section id="pourquoi" style="background:var(--bg-2);padding:clamp(56px,9vw,118px) clamp(18px,5vw,56px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div data-reveal="1" style="max-width:48em;margin:0 auto clamp(36px,5vw,52px);">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;text-align:center;">Les chiffres qui comptent</div>
+        <h2 style="font-family:var(--font-title);font-weight:700;letter-spacing:-.02em;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;margin:0 0 24px;color:var(--ink);text-align:center;">Si on ne vous trouve pas en ligne, on va voir ailleurs</h2>
+        <div style="border-left:3px solid var(--accent);padding:4px 0 4px 20px;">
+          <p style="font-size:1.12rem;line-height:1.72;color:var(--ink);margin:0;">L'économie locale traverse une période difficile, et à Grenoble beaucoup de commerces ferment. Pourtant, vos futurs clients sont là, sur leur téléphone, à chercher où aller. Leur donner les moyens de vous trouver, c'est déjà se donner une chance.</p>
+        </div>
+      </div>
+
+      <div class="stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.4vw,24px);">
+        <div data-reveal="1" class="stat-card">
+          <div class="stat-num">88%</div>
+          <p>des Français cherchent un commerce sur Google avant d'y aller.</p>
+        </div>
+        <div data-reveal="1" class="stat-card">
+          <div class="stat-num">76%</div>
+          <p>des recherches locales sur mobile finissent en visite en magasin sous 24h.</p>
+        </div>
+        <div data-reveal="1" class="stat-card">
+          <div class="stat-num">9/10</div>
+          <p>consommateurs lisent les avis avant de choisir un commerce.</p>
+        </div>
+        <div data-reveal="1" class="stat-card">
+          <div class="stat-num">×7</div>
+          <p>plus de clics pour une fiche Google bien tenue face à la concurrence.</p>
+        </div>
+      </div>
+
+      <p data-reveal="1" style="text-align:center;font-size:1.05rem;line-height:1.7;color:var(--ink-2);margin:clamp(30px,4vw,42px) auto 0;max-width:44em;">Sans site ni fiche Google à jour, vous êtes invisible face aux concurrents qui, eux, y sont. <strong style="color:var(--ink);">C'est exactement ce sur quoi je vous aide.</strong></p>
+      <p data-reveal="1" style="text-align:center;font-size:12px;color:var(--ink-2);opacity:.75;margin:16px 0 0;">Sources : Partoo 2025, France Num, Google.</p>
+    </div>
+  </section>
+
+  <!-- REALISATIONS -->
+  <section id="realisations" style="padding:clamp(56px,9vw,118px) clamp(18px,5vw,56px);">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div data-reveal="1" style="margin-bottom:clamp(34px,4vw,52px);">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;">Réalisation</div>
+        <h2 style="font-family:var(--font-title);font-weight:700;letter-spacing:-.02em;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;margin:0;color:var(--ink);">Restaurant Tuk Tuk, Grenoble</h2>
+      </div>
+
+      <div class="real-grid" style="display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,56px);align-items:center;">
+        <!-- Aperçu du site (capture réelle si présente, sinon fallback propre) -->
+        <div data-reveal="1" class="browser-mock" style="border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 40px 70px -42px rgba(20,40,90,.35);">
+          <div style="display:flex;align-items:center;gap:7px;padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--line);">
+            <span style="width:11px;height:11px;border-radius:50%;background:#ef4444;display:block;"></span>
+            <span style="width:11px;height:11px;border-radius:50%;background:#f59e0b;display:block;"></span>
+            <span style="width:11px;height:11px;border-radius:50%;background:#22c55e;display:block;"></span>
+            <span style="flex:1;margin-left:10px;font-size:12.5px;color:var(--ink-2);background:var(--bg-2);border:1px solid var(--line);border-radius:6px;padding:6px 12px;text-align:center;">tuktuk-grenoble.fr</span>
+          </div>
+          <div style="position:relative;aspect-ratio:16/10.5;background:linear-gradient(135deg,#eef4fe,#d7e4fd);display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:var(--font-title);font-weight:600;font-size:1rem;color:var(--accent);letter-spacing:.02em;">Aperçu — tuktuk-grenoble.fr</span>
+            <img src="assets/tuktuk-apercu.png" alt="Aperçu du site Tuk Tuk réalisé par Matis Percheron" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;background:#fff;">
+          </div>
+        </div>
+
+        <!-- Texte étude de cas (factuel, pas de faux avis) -->
+        <div data-reveal="1">
+          <p style="font-size:1.12rem;line-height:1.72;color:var(--ink);margin:0 0 22px;">Site one-page sur-mesure <strong>+</strong> fiche Google reprise de zéro : carte en ligne, photos, horaires et avis enfin à jour, et une vraie présence sur Google Maps.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px;">
+            <span class="chip">Site one-page</span>
+            <span class="chip">Fiche Google</span>
+            <span class="chip">Mise en ligne + domaine</span>
+            <span class="chip">Référencement local</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:26px;">
+            <svg viewBox="0 0 24 24" width="30" height="30" style="flex:none;display:block;"><path fill="#4285F4" d="M22.5 12.2c0-.7-.06-1.4-.18-2H12v3.8h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-2 3.2-4.8 3.2-7.8Z"></path><path fill="#34A853" d="M12 23c2.9 0 5.4-1 7.2-2.6l-3.6-2.7c-1 .7-2.3 1.1-3.6 1.1-2.8 0-5.1-1.9-6-4.4H2.3v2.8A11 11 0 0 0 12 23Z"></path><path fill="#FBBC05" d="M6 14.4a6.6 6.6 0 0 1 0-4.2V7.4H2.3a11 11 0 0 0 0 9.8L6 14.4Z"></path><path fill="#EA4335" d="M12 5.4c1.6 0 3 .55 4.1 1.6l3.1-3.1A11 11 0 0 0 2.3 7.4L6 10.2c.9-2.6 3.2-4.4 6-4.4Z"></path></svg>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span style="font-family:var(--font-title);font-weight:700;font-size:1.5rem;line-height:1;color:var(--ink);">4,9</span><span style="color:#f59e0b;font-size:14px;letter-spacing:1px;">★★★★★</span></div>
+              <div style="font-size:12.5px;color:var(--ink-2);margin-top:3px;">102 avis sur Google</div>
+            </div>
+          </div>
+          <a href="https://tuktuk-grenoble.fr" target="_blank" rel="noopener" class="btn-dark btn-lg">Voir le site en ligne
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block;"><path d="M7 17 17 7M9 7h8v8"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI MOI -->
+  <section id="approche" style="background:var(--bg-2);padding:clamp(56px,9vw,118px) clamp(18px,5vw,56px);border-top:1px solid var(--line);">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div data-reveal="1" style="max-width:42em;margin:0 auto clamp(38px,5vw,56px);text-align:center;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">Pourquoi travailler avec moi</div>
+        <h2 style="font-family:var(--font-title);font-weight:700;letter-spacing:-.02em;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;margin:0;color:var(--ink);">Simple, local, et à votre écoute</h2>
+      </div>
+      <div class="why-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.5vw,26px);">
+        <div data-reveal="1" class="why-card">
+          <div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+          <h3>Local</h3>
+          <p>Basé à Grenoble, je connais le terrain et je me déplace pour vous rencontrer.</p>
+        </div>
+        <div data-reveal="1" class="why-card">
+          <div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+          <h3>À votre écoute</h3>
+          <p>Vous échangez directement avec moi, pas avec un standard. Je prends le temps de comprendre votre commerce.</p>
+        </div>
+        <div data-reveal="1" class="why-card">
+          <div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+          <h3>Accessible</h3>
+          <p>Des tarifs pensés pour les petits commerces. On s'adapte à votre budget.</p>
+        </div>
+        <div data-reveal="1" class="why-card">
+          <div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg></div>
+          <h3>Performance</h3>
+          <p>Je m'occupe de toute la partie technique, avec un seul objectif : vous aider à gagner en visibilité et en clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section id="tarifs" style="padding:clamp(56px,9vw,118px) clamp(18px,5vw,56px);">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div data-reveal="1" style="max-width:42em;margin:0 auto clamp(40px,5vw,58px);text-align:center;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">Tarifs</div>
+        <h2 style="font-family:var(--font-title);font-weight:700;letter-spacing:-.02em;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;margin:0 0 16px;color:var(--ink);">Des prix clairs, sans surprise</h2>
+        <p style="font-size:1.1rem;line-height:1.7;color:var(--ink-2);margin:0;">Chaque commerce est différent. Voici des points de départ, le prix final dépend de vos besoins.</p>
+      </div>
+
+      <!-- OFFRE PHARE : Pack site + visibilité -->
+      <div data-reveal="1" style="position:relative;background:var(--accent);color:#fff;border-radius:18px;padding:clamp(28px,4vw,46px);margin-bottom:clamp(26px,3.5vw,36px);overflow:hidden;box-shadow:0 34px 64px -34px rgba(37,99,235,.6);">
+        <span style="position:absolute;top:18px;right:18px;background:#fff;color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 13px;border-radius:20px;">Le plus demandé</span>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:30px;">
+          <div style="flex:1;min-width:262px;">
+            <div style="font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:12px;">Pack tout-en-un</div>
+            <h3 style="font-family:var(--font-title);font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.08;margin:0 0 10px;color:#fff;">Site web + visibilité Google</h3>
+            <p style="font-size:1.05rem;line-height:1.6;color:rgba(255,255,255,.85);margin:0 0 20px;max-width:30em;">La formule complète : votre site, votre fiche Google gérée chaque mois, et un seul interlocuteur pour tout gérer.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 22px;max-width:32em;">
+              <span style="display:flex;align-items:center;gap:9px;font-size:.96rem;color:#fff;"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;"><path d="M20 6 9 17l-5-5"></path></svg>Site one-page sur-mesure</span>
+              <span style="display:flex;align-items:center;gap:9px;font-size:.96rem;color:#fff;"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;"><path d="M20 6 9 17l-5-5"></path></svg>Fiche Google gérée chaque mois</span>
+              <span style="display:flex;align-items:center;gap:9px;font-size:.96rem;color:#fff;"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;"><path d="M20 6 9 17l-5-5"></path></svg>Visite photo, stories &amp; réseaux sociaux</span>
+              <span style="display:flex;align-items:center;gap:9px;font-size:.96rem;color:#fff;"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;"><path d="M20 6 9 17l-5-5"></path></svg>Hébergement &amp; maintenance inclus</span>
+            </div>
+          </div>
+          <div style="flex:none;width:222px;max-width:100%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:22px;text-align:center;">
+            <div style="font-size:13px;color:rgba(255,255,255,.8);">à partir de</div>
+            <div style="font-family:var(--font-title);font-weight:700;font-size:2.7rem;line-height:1;color:#fff;margin:3px 0;">490€</div>
+            <div style="font-size:13.5px;color:rgba(255,255,255,.85);margin-bottom:8px;">à la création</div>
+            <div style="font-family:var(--font-title);font-weight:700;font-size:1.45rem;color:#fff;">puis 99€<span style="font-size:.95rem;font-weight:500;">/mois</span></div>
+            <div style="font-size:12px;color:rgba(255,255,255,.82);margin:10px 0 16px;">100€ offerts sur le site + maintenance incluse</div>
+            <a href="#contact" style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:var(--accent);font-weight:700;font-size:1rem;padding:13px 22px;border-radius:10px;text-decoration:none;width:100%;">Demander un devis</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal="1" style="text-align:center;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);margin-bottom:clamp(18px,2.5vw,24px);">Ou à la carte</div>
+
+      <div class="pricing-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.5vw,26px);align-items:stretch;">
+
+        <!-- Site web seul -->
+        <div data-reveal="1" class="price-card" style="background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(26px,3vw,36px);display:flex;flex-direction:column;">
+          <h3 style="font-family:var(--font-title);font-weight:700;font-size:1.35rem;margin:0 0 6px;color:var(--ink);">Site web</h3>
+          <p style="font-size:.94rem;color:var(--ink-2);margin:0 0 18px;">Paiement unique. Le site est à vous.</p>
+          <div style="display:flex;align-items:baseline;gap:7px;margin-bottom:4px;">
+            <span style="font-size:13px;color:var(--ink-2);">à partir de</span>
+            <span style="font-family:var(--font-title);font-weight:700;font-size:2.4rem;line-height:1;color:var(--ink);">590€</span>
+          </div>
+          <div style="font-size:13px;color:var(--accent);font-weight:600;margin-bottom:20px;">Paiement en 3× sans frais disponible</div>
+          <ul style="list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:11px;">
+            <li class="feat">Site one-page sur-mesure</li>
+            <li class="feat">Adapté mobile &amp; rapide</li>
+            <li class="feat">Domaine + mise en ligne</li>
+            <li class="feat">Prêt à apparaître sur Google</li>
+            <li class="feat">Search Console &amp; sitemap configurés</li>
+          </ul>
+          <p style="font-size:12.5px;line-height:1.5;color:var(--ink-2);margin:0 0 22px;">Pages supplémentaires sur devis.<br>Hébergement &amp; maintenance ensuite : 15€/mois (modifs, mises à jour, domaine).</p>
+          <a href="#contact" class="btn-outline" style="width:100%;margin-top:auto;">Demander un devis</a>
+        </div>
+
+        <!-- Google — Essentiel (le plus accessible) -->
+        <div data-reveal="1" class="price-card" style="background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(26px,3vw,36px);display:flex;flex-direction:column;">
+          <span style="align-self:flex-start;background:#dcfce7;color:#15803d;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:5px 11px;border-radius:20px;margin-bottom:14px;">Le plus accessible</span>
+          <h3 style="font-family:var(--font-title);font-weight:700;font-size:1.35rem;margin:0 0 6px;color:var(--ink);">Google — Essentiel</h3>
+          <p style="font-size:.94rem;color:var(--ink-2);margin:0 0 18px;">Votre fiche Google bien tenue.</p>
+          <div style="display:flex;align-items:baseline;gap:7px;margin-bottom:20px;">
+            <span style="font-size:13px;color:var(--ink-2);">à partir de</span>
+            <span style="font-family:var(--font-title);font-weight:700;font-size:2.4rem;line-height:1;color:var(--ink);">49€</span>
+            <span style="font-size:1rem;color:var(--ink-2);">/mois</span>
+          </div>
+          <ul style="list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:11px;">
+            <li class="feat">Gestion de votre fiche Google</li>
+            <li class="feat">1 post par semaine sur Google</li>
+            <li class="feat">Réponses &amp; collecte d'avis</li>
+            <li class="feat">Rapport mensuel</li>
+          </ul>
+          <a href="#contact" class="btn-outline" style="width:100%;margin-top:auto;">Demander un devis</a>
+        </div>
+
+        <!-- Google — Complet -->
+        <div data-reveal="1" class="price-card" style="background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(26px,3vw,36px);display:flex;flex-direction:column;">
+          <h3 style="font-family:var(--font-title);font-weight:700;font-size:1.35rem;margin:0 0 6px;color:var(--ink);">Google — Complet</h3>
+          <p style="font-size:.94rem;color:var(--ink-2);margin:0 0 18px;">La présence locale complète.</p>
+          <div style="display:flex;align-items:baseline;gap:7px;margin-bottom:20px;">
+            <span style="font-size:13px;color:var(--ink-2);">à partir de</span>
+            <span style="font-family:var(--font-title);font-weight:700;font-size:2.4rem;line-height:1;color:var(--ink);">99€</span>
+            <span style="font-size:1rem;color:var(--ink-2);">/mois</span>
+          </div>
+          <ul style="list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:11px;">
+            <li class="feat">Tout l'Essentiel</li>
+            <li class="feat">Visite photo + stories vidéo / mois</li>
+            <li class="feat">1 post/semaine : Google, Insta &amp; Facebook</li>
+            <li class="feat">Stories à la une au design de votre site</li>
+          </ul>
+          <a href="#contact" class="btn-outline" style="width:100%;margin-top:auto;">Demander un devis</a>
+        </div>
+
+      </div>
+
+      <p data-reveal="1" style="text-align:center;font-size:15px;line-height:1.6;color:var(--ink-2);margin:clamp(28px,4vw,40px) auto 0;max-width:42em;">Chaque commerce est différent. <strong style="color:var(--ink);">Parlons de votre budget, je saurai m'adapter.</strong></p>
+      <div data-reveal="1" style="text-align:center;margin-top:22px;">
+        <a href="catalogue-services.pdf" target="_blank" rel="noopener" class="btn-outline" style="display:inline-flex;white-space:normal;text-align:center;max-width:100%;">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path></svg>
+          Télécharger le détail de mes services (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding:clamp(56px,9vw,118px) clamp(18px,5vw,56px);border-top:1px solid var(--line);">
+    <div style="max-width:760px;margin:0 auto;">
+      <div data-reveal="1" style="max-width:42em;margin:0 auto clamp(34px,4vw,48px);text-align:center;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">Questions fréquentes</div>
+        <h2 style="font-family:var(--font-title);font-weight:700;letter-spacing:-.02em;font-size:clamp(2rem,4.4vw,3rem);line-height:1.05;margin:0;color:var(--ink);">Vous vous posez sûrement ces questions</h2>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:12px;">
+        <details class="faq-item">
+          <summary>Quelle différence entre mon site web et ma fiche Google ?</summary>
+          <p>Ce sont deux choses complémentaires. Votre fiche Google (visible sur Google Search et Google Maps) est ce qu'un client voit en premier en tapant votre nom ou « près de moi » : avis, photos, horaires, itinéraire. Votre site web est votre vitrine complète, là où on va pour en savoir plus une fois qu'on vous a trouvé.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Êtes-vous un expert ou une agence SEO ?</summary>
+          <p>Non, et je ne vends pas ça. Je suis spécialisé dans la visibilité locale : un site simple et efficace, une fiche Google bien tenue. Le référencement au sens agence (gros sites, contenu, audits techniques poussés) est un autre métier. Mon travail, c'est de vous rendre visible localement, pas de vous faire grimper sur des milliers de mots-clés nationaux.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Combien de temps avant de voir des résultats ?</summary>
+          <p>Pas de promesse chiffrée à l'avance : une fiche Google active prend en général plusieurs semaines à mieux remonter. Ce que je garantis, c'est un suivi mensuel avec de vrais chiffres (vues, appels, demandes d'itinéraire) pour voir l'évolution concrètement.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Je suis engagé combien de temps, et si j'arrête je récupère tout ?</summary>
+          <p>Les abonnements sont sans engagement long, vous pouvez arrêter d'un mois à l'autre. Le site reste à vous : je peux vous remettre les fichiers, et les accès à votre fiche Google et vos réseaux restent toujours les vôtres (je ne demande jamais vos mots de passe personnels, je suis ajouté comme gestionnaire).</p>
+        </details>
+        <details class="faq-item">
+          <summary>Comment se passe le paiement ?</summary>
+          <p>Le site peut être payé en 3 fois sans frais. Les abonnements sont mensuels, sans engagement long.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:var(--bg-2);padding:clamp(60px,9vw,120px) clamp(18px,5vw,56px);border-top:1px solid var(--line);">
+    <div data-reveal="1" style="max-width:760px;margin:0 auto;text-align:center;">
+      <div style="font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">Contact</div>
+      <h2 style="font-family:var(--font-title);font-weight:700;letter-spacing:-.02em;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.04;margin:0 0 18px;color:var(--ink);">Discutons de votre projet</h2>
+      <p style="font-size:1.15rem;line-height:1.7;color:var(--ink-2);margin:0 0 34px;">Un site à refaire, une fiche Google à reprendre en main, ou juste une question ? Le premier échange est gratuit et sans engagement.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:18px;">
+        <a href="tel:0769826809" class="btn-accent btn-lg">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
+          07 69 82 68 09
+        </a>
+        <a href="sms:0769826809" class="btn-outline btn-lg">Envoyer un SMS</a>
+        <a href="mailto:contact@webmatis.fr" class="btn-outline btn-lg">M'écrire un email</a>
+      </div>
+      <p style="font-size:14px;color:var(--ink-2);margin:0;">contact@webmatis.fr · Grenoble &amp; agglomération</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--ink);color:var(--bg);padding:clamp(44px,7vw,72px) clamp(18px,5vw,56px) 28px;">
+    <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:32px 56px;justify-content:space-between;align-items:flex-start;">
+      <div style="max-width:28em;">
+        <span style="font-family:var(--font-title);font-weight:700;font-size:1.3rem;letter-spacing:-.02em;">Matis Percheron<span style="color:var(--accent);">.</span></span>
+        <p style="font-size:1rem;line-height:1.65;color:rgba(255,255,255,.66);margin:14px 0 0;">Sites web &amp; visibilité Google pour les commerces de Grenoble. Simple, local, à prix accessible.</p>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:14px;">Contact</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:14.5px;line-height:1.5;">
+          <a href="tel:0769826809" class="footer-link">07 69 82 68 09</a>
+          <a href="mailto:contact@webmatis.fr" class="footer-link">contact@webmatis.fr</a>
+          <span style="color:rgba(255,255,255,.66);">Grenoble &amp; agglomération</span>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:34px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:rgba(255,255,255,.5);">
+      <span>© 2026 Matis Percheron · Grenoble</span>
+      <a href="mentions-legales.html" class="footer-link" style="color:rgba(255,255,255,.5);">Mentions légales</a>
+      <span>Création de sites web &amp; référencement local</span>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

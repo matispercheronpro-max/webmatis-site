@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogue des services — Matis Percheron · webmatis.fr</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f8fa;--surface:#ffffff;--ink:#16181d;--ink-2:#5b6170;--line:#e3e7ee;
+    --accent:#2563eb;--accent-2:#1d4ed8;--accent-soft:#dbe6fe;--ok:#15803d;--ok-soft:#dcfce7;
+    --title:'Space Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:#e9edf3;line-height:1.6;
+    -webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  .page{
+    background:var(--surface);width:210mm;margin:14px auto;padding:22mm 20mm;
+    box-shadow:0 10px 40px -20px rgba(20,40,90,.4);
+  }
+  .eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  h1{font-family:var(--title);font-weight:700;font-size:40px;line-height:1.05;letter-spacing:-.02em;margin:0 0 14px;}
+  h2{font-family:var(--title);font-weight:700;font-size:26px;line-height:1.12;letter-spacing:-.015em;margin:0 0 6px;}
+  p{margin:0 0 12px;color:#3a3f4a;}
+  .muted{color:var(--ink-2);}
+  .price{font-family:var(--title);font-weight:700;color:var(--accent);font-size:15px;}
+  .lead{font-size:16px;color:var(--ink-2);}
+  .block{break-inside:avoid;}
+  .section{margin-top:30px;}
+  /* À quoi ça sert */
+  .why{background:var(--accent-soft);border-radius:12px;padding:15px 18px;margin:14px 0 18px;break-inside:avoid;}
+  .why .lab{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2);margin-bottom:6px;}
+  .why p{margin:0;color:#1e3a8a;font-size:14px;}
+  /* Étapes compactes */
+  .steps{counter-reset:s;margin:6px 0 0;padding:0;list-style:none;}
+  .steps>li{counter-increment:s;position:relative;padding:0 0 12px 40px;font-size:14px;break-inside:avoid;}
+  .steps>li::before{
+    content:counter(s);position:absolute;left:0;top:-2px;width:27px;height:27px;border-radius:50%;
+    background:var(--accent);color:#fff;font-family:var(--title);font-weight:700;font-size:13px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .steps>li strong{color:var(--ink);}
+  .serves{color:var(--accent-2);font-weight:500;}
+  /* Listes inclus / option */
+  .cols{display:flex;gap:16px;margin-top:14px;break-inside:avoid;}
+  .col{flex:1;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .col .ttl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;}
+  .col ul{margin:0;padding:0;list-style:none;}
+  .col li{position:relative;padding:4px 0 4px 22px;font-size:13.5px;color:#3a3f4a;}
+  .col.inc li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700;}
+  .col.opt li::before{content:"+";position:absolute;left:0;color:var(--ink-2);font-weight:700;}
+  /* Encart secondaire */
+  .panel{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin-top:16px;break-inside:avoid;}
+  /* Stats couverture */
+  .stats{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;}
+  .statcard{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px;break-inside:avoid;}
+  .statcard .n{font-family:var(--title);font-weight:700;font-size:28px;line-height:1;color:var(--accent);margin-bottom:8px;}
+  .statcard .t{font-size:11.5px;color:var(--ink-2);line-height:1.4;}
+  /* Tableau */
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px;}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{font-family:var(--title);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);}
+  .tag{display:inline-block;background:var(--ok-soft);color:var(--ok);font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;}
+  .tag-blue{background:var(--accent-soft);color:var(--accent-2);}
+  .pill{display:inline-block;background:var(--accent-soft);color:var(--accent-2);font-size:12px;font-weight:600;padding:4px 11px;border-radius:20px;}
+  hr{border:none;border-top:1px solid var(--line);margin:22px 0;}
+  @media print{
+    body{background:#fff;}
+    .page{box-shadow:none;margin:0;padding:12mm 14mm;width:auto;page-break-after:always;}
+    .page:last-child{page-break-after:auto;}
+    h1{font-size:32px;}
+    h2{font-size:22px;}
+    .section{margin-top:20px;}
+    .why{margin:10px 0 12px;padding:11px 15px;}
+    .why p{font-size:13px;}
+    .steps{margin-top:4px;}
+    .steps>li{padding:0 0 8px 38px;font-size:13px;}
+    .steps>li::before{width:23px;height:23px;font-size:12px;}
+    .cols{margin-top:10px;}
+    .col{padding:11px 14px;}
+    .col li{font-size:12.5px;padding:3px 0 3px 20px;}
+    .panel{margin-top:10px;padding:12px 15px;}
+    .panel p{font-size:13px;}
+  }
+  @page{size:A4;margin:0;}
+</style>
+</head>
+<body>
+
+<!-- ===================== COUVERTURE ===================== -->
+<div class="page cover">
+  <div style="height:148px;border-radius:14px;overflow:hidden;position:relative;margin-bottom:30px;">
+    <div style="position:absolute;inset:0;background:#1d4ed8;background-image:url('assets/grenoble-hero.jpg');background-size:cover;background-position:center;"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,30,70,.25),rgba(15,30,70,.72));"></div>
+    <div style="position:absolute;left:22px;bottom:16px;color:#fff;">
+      <div style="font-family:var(--title);font-weight:700;font-size:22px;">Matis Percheron<span style="color:#bfdbfe;">.</span></div>
+      <div style="font-size:13px;opacity:.9;">webmatis.fr · Grenoble</div>
+    </div>
+  </div>
+
+  <div class="eyebrow">Catalogue des services</div>
+  <h1>Ce que je fais,<br>et à quoi ça sert <span style="color:var(--accent);">pour vous</span></h1>
+  <p class="lead" style="max-width:30em;">Sites web et visibilité Google pour les commerces de Grenoble. Ce document détaille, service par service, tout ce que je réalise concrètement et ce que ça vous apporte vraiment.</p>
+
+  <div class="section" style="margin-top:26px;">
+    <div class="eyebrow" style="margin-bottom:13px;">Pourquoi c'est important aujourd'hui</div>
+    <div class="stats">
+      <div class="statcard"><div class="n">88%</div><div class="t">des Français cherchent un commerce sur Google avant d'y aller</div></div>
+      <div class="statcard"><div class="n">76%</div><div class="t">des recherches locales sur mobile finissent en visite sous 24h</div></div>
+      <div class="statcard"><div class="n">9/10</div><div class="t">consommateurs lisent les avis avant de choisir</div></div>
+      <div class="statcard"><div class="n">×7</div><div class="t">de clics pour une fiche Google bien tenue</div></div>
+    </div>
+    <p class="muted" style="font-size:11px;margin-top:10px;">Sources : Partoo 2025, France Num, Google.</p>
+  </div>
+
+  <div style="margin-top:26px;border-top:1px solid var(--line);padding-top:18px;display:flex;gap:34px;flex-wrap:wrap;font-size:14px;">
+    <div><div class="muted" style="font-size:12px;">Téléphone</div><strong>07 69 82 68 09</strong></div>
+    <div><div class="muted" style="font-size:12px;">Email</div><strong>contact@webmatis.fr</strong></div>
+    <div><div class="muted" style="font-size:12px;">Zone</div><strong>Grenoble &amp; agglomération</strong></div>
+  </div>
+</div>
+
+<!-- ===================== 01 · SITE WEB ===================== -->
+<div class="page">
+  <div class="eyebrow">Service 01</div>
+  <h2>Création de site web</h2>
+  <div class="price">À partir de 590€ · en ligne en ~1 semaine</div>
+
+  <div class="why">
+    <div class="lab">À quoi ça sert</div>
+    <p>Un client qui entend parler de vous vérifie en ligne avant de se déplacer. Sans site, ou avec un site daté, vous perdez en crédibilité face au concurrent qui en a un. Votre site, c'est votre vitrine ouverte 24h/24 : elle informe, rassure et donne envie de pousser la porte.</p>
+  </div>
+
+  <h3 style="font-family:var(--title);font-size:15px;margin:0 0 12px;">Tout ce que je fais, étape par étape</h3>
+  <ol class="steps">
+    <li><strong>Découverte &amp; brief.</strong> On comprend votre commerce, vos clients, vos objectifs. <span class="serves">→ un site qui colle à VOTRE réalité.</span></li>
+    <li><strong>Contenu &amp; rédaction.</strong> Je récupère infos, photos, logo, et je rédige les textes avec vous. <span class="serves">→ un site complet sans rien écrire vous-même.</span></li>
+    <li><strong>Design &amp; maquette.</strong> Structure, couleurs et mise en page à votre image. <span class="serves">→ une image pro qui inspire confiance.</span></li>
+    <li><strong>Développement &amp; mobile.</strong> Je code le site, rapide et parfait sur téléphone. <span class="serves">→ aucun client perdu (le local, c'est surtout mobile).</span></li>
+    <li><strong>Optimisation Google.</strong> Titres, descriptions, vitesse, balises, configuration de Search Console et du sitemap. <span class="serves">→ être trouvable et bien indexé sur Google.</span></li>
+    <li><strong>Domaine &amp; mise en ligne.</strong> J'achète et configure domaine, hébergement, HTTPS. <span class="serves">→ une adresse pro, un site sécurisé en ligne 24/7.</span></li>
+    <li><strong>Vérifications.</strong> Tests sur tous les écrans, relecture, corrections. <span class="serves">→ un site fini, sans faute ni bug.</span></li>
+    <li><strong>Remise &amp; prise en main.</strong> Je vous explique tout et comment demander des modifs. <span class="serves">→ vous restez serein, un seul interlocuteur.</span></li>
+  </ol>
+
+  <div class="cols">
+    <div class="col inc">
+      <div class="ttl" style="color:var(--ok);">Inclus</div>
+      <ul>
+        <li>Site une page sur-mesure</li>
+        <li>Version mobile &amp; rapidité</li>
+        <li>Domaine + mise en ligne (1ère année)</li>
+        <li>Configuration Google Search Console</li>
+        <li>Sitemap &amp; données structurées (infos lisibles par Google)</li>
+        <li>Textes rédigés ensemble</li>
+      </ul>
+    </div>
+    <div class="col opt">
+      <div class="ttl" style="color:var(--ink-2);">En option</div>
+      <ul>
+        <li>Pages supplémentaires (sur devis)</li>
+        <li>Carte / menu au même design que le site</li>
+        <li>Réservation / prise de RDV en ligne</li>
+        <li>Boutique en ligne (via Shopify)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px;">
+      <div style="font-family:var(--title);font-weight:600;font-size:16px;">Ensuite : hébergement &amp; maintenance</div>
+      <div class="price">15€/mois</div>
+    </div>
+    <p style="margin:0 0 6px;font-size:13.5px;">Votre site reste en ligne, sécurisé et à jour, et vous me demandez vos modifs (menu, horaires, promos) quand vous voulez. Vous restez libre : si vous partez un jour, je vous remets les fichiers.</p>
+    <div style="font-size:13px;color:var(--ink-2);">Inclus : hébergement, renouvellement du domaine, sécurité (HTTPS) &amp; sauvegardes, petites modifications à la demande.</div>
+  </div>
+</div>
+
+<!-- ===================== 02 · GOOGLE ESSENTIEL ===================== -->
+<div class="page">
+  <div class="eyebrow">Service 02</div>
+  <h2>Visibilité Google — Essentiel</h2>
+  <div class="price">49€/mois · sans engagement long · <span class="tag">le plus accessible</span></div>
+
+  <div class="why">
+    <div class="lab">À quoi ça sert</div>
+    <p>Votre fiche Google (sur Google et Maps) est souvent le tout premier contact avec un futur client. 88% des Français y vérifient un commerce avant d'y aller. Une fiche complète, active et bien notée vous fait remonter dans les recherches « près de moi » et donne confiance. La plupart des commerces ont une fiche à l'abandon : c'est exactement là que vous prenez l'avantage.</p>
+  </div>
+
+  <h3 style="font-family:var(--title);font-size:15px;margin:0 0 12px;">Ce que je fais chaque mois</h3>
+  <ol class="steps">
+    <li><strong>Optimisation de la fiche.</strong> Catégories, description, services, infos, horaires, attributs, photo de couverture. <span class="serves">→ mieux classé, toutes les bonnes infos d'un coup d'œil.</span></li>
+    <li><strong>1 publication par semaine.</strong> Actus, offres, nouveautés directement sur votre fiche Google. <span class="serves">→ montrer à Google et aux clients un commerce actif et vivant.</span></li>
+    <li><strong>Gestion des avis.</strong> Je réponds aux avis et je mets en place un système pour en collecter (QR code / lien). <span class="serves">→ plus d'avis = plus de confiance et meilleur classement.</span></li>
+    <li><strong>Rapport mensuel.</strong> Vues de la fiche, appels, demandes d'itinéraire, nouveaux avis. <span class="serves">→ voir noir sur blanc ce que ça rapporte.</span></li>
+  </ol>
+</div>
+
+<!-- ===================== 03 · GOOGLE COMPLET ===================== -->
+<div class="page">
+  <div class="eyebrow">Service 03</div>
+  <h2>Visibilité Google — Complet</h2>
+  <div class="price">99€/mois · sans engagement long</div>
+
+  <div class="why">
+    <div class="lab">À quoi ça sert</div>
+    <p>Tout ce qu'il y a dans l'Essentiel, plus ce qui fait vraiment la différence : des photos et vidéos récentes chaque mois, une présence sur les réseaux sociaux, et une image cohérente partout. C'est le travail que les commerçants n'ont jamais le temps de faire, et c'est précisément ce que Google et les clients récompensent.</p>
+  </div>
+
+  <h3 style="font-family:var(--title);font-size:15px;margin:0 0 12px;">Tout l'Essentiel, plus :</h3>
+  <ol class="steps">
+    <li><strong>Visite photo &amp; vidéo sur place chaque mois.</strong> 20-30 photos + des stories vidéo qu'on tourne ensemble (un plat, la terrasse, les horaires…). <span class="serves">→ Google met en avant les fiches récentes ; ça booste concrètement les vues.</span></li>
+    <li><strong>1 publication par semaine, partout.</strong> Sur Google, Instagram et Facebook (mêmes contenus, publiés d'un coup via Meta Business Suite). <span class="serves">→ vous êtes présent là où sont vos clients, sans effort de votre côté.</span></li>
+    <li><strong>Vos stories à la une, au design de votre site.</strong> Je crée les couvertures de stories d'Instagram aux couleurs et au style de votre site. <span class="serves">→ une image cohérente et pro du site jusqu'aux réseaux.</span></li>
+  </ol>
+
+  <div class="why" style="background:var(--ok-soft);">
+    <div class="lab" style="color:var(--ok);">Bon à savoir</div>
+    <p style="color:#14532d;">Instagram et Facebook se gèrent ensemble (même outil Meta) : on publie sur les deux d'un coup. Je m'adapte au réseau que vos clients utilisent vraiment.</p>
+  </div>
+</div>
+
+<!-- ===================== 04 · PACK ===================== -->
+<div class="page">
+  <div class="eyebrow">Service 04 · le plus demandé</div>
+  <h2>Pack tout-en-un</h2>
+  <div class="price">490€ à la création, puis 99€/mois</div>
+
+  <div class="why">
+    <div class="lab">À quoi ça sert</div>
+    <p>La formule complète, pensée pour ne plus avoir à y penser : votre site web, votre fiche Google gérée chaque semaine, vos réseaux sociaux, l'hébergement et la maintenance, et un seul interlocuteur pour tout. La solution la plus efficace pour exister en ligne et le rester.</p>
+  </div>
+
+  <div class="cols">
+    <div class="col inc">
+      <div class="ttl" style="color:var(--ok);">Ce qui est compris</div>
+      <ul>
+        <li>Toute la création de site web (01)</li>
+        <li>Hébergement &amp; maintenance</li>
+        <li>Visibilité Google Complet (03)</li>
+        <li>Réseaux sociaux Instagram &amp; Facebook</li>
+        <li>Un seul interlocuteur : moi</li>
+      </ul>
+    </div>
+    <div class="col" style="border-color:var(--accent);background:var(--accent-soft);">
+      <div class="ttl" style="color:var(--accent-2);">Votre avantage</div>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="padding:4px 0;font-size:13.5px;color:#1e3a8a;">100€ offerts sur le site</li>
+        <li style="padding:4px 0;font-size:13.5px;color:#1e3a8a;">Maintenance (15€/mois) incluse</li>
+        <li style="padding:4px 0;font-size:13.5px;color:#1e3a8a;">Tout géré, zéro prise de tête</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== DÉROULEMENT + RÉCAP ===================== -->
+<div class="page">
+  <div class="eyebrow">En pratique</div>
+  <h2>Comment ça se passe</h2>
+  <ol class="steps" style="margin-top:14px;">
+    <li><strong>Premier échange, gratuit.</strong> Sur place ou par téléphone, sans engagement.</li>
+    <li><strong>Devis clair.</strong> Un prix net, sans surprise, adapté à votre budget.</li>
+    <li><strong>Réalisation.</strong> Le site est en ligne en environ une semaine.</li>
+    <li><strong>Suivi mensuel.</strong> Pour les abonnements : gestion + rapport chaque mois.</li>
+  </ol>
+
+  <hr>
+
+  <div class="eyebrow">Récapitulatif</div>
+  <h2 style="margin-bottom:12px;">Les tarifs en un coup d'œil</h2>
+  <table>
+    <thead><tr><th>Offre</th><th>Prix</th><th>Idéal pour</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Site web</strong></td><td><span class="price">dès 590€</span></td><td class="muted">Exister en ligne avec une vraie vitrine</td></tr>
+      <tr><td><strong>Hébergement &amp; maintenance</strong></td><td><span class="price">15€/mois</span></td><td class="muted">Garder le site en ligne et à jour</td></tr>
+      <tr><td><strong>Google Essentiel</strong> <span class="tag">accessible</span></td><td><span class="price">49€/mois</span></td><td class="muted">Une fiche Google bien tenue</td></tr>
+      <tr><td><strong>Google Complet</strong></td><td><span class="price">99€/mois</span></td><td class="muted">Photos, vidéos &amp; réseaux sociaux en plus</td></tr>
+      <tr><td><strong>Pack tout-en-un</strong> <span class="tag tag-blue">le plus demandé</span></td><td><span class="price">490€ + 99€/mois</span></td><td class="muted">Tout géré, un seul interlocuteur</td></tr>
+    </tbody>
+  </table>
+  <p class="muted" style="font-size:13px;margin-top:12px;">Paiement du site en plusieurs fois sans frais possible. Chaque commerce est différent : parlons de votre budget, je m'adapte.</p>
+
+  <div style="margin-top:22px;background:var(--ink);color:#fff;border-radius:14px;padding:20px 22px;">
+    <div style="font-family:var(--title);font-weight:700;font-size:18px;margin-bottom:6px;">Parlons de votre projet</div>
+    <p style="margin:0;color:rgba(255,255,255,.82);font-size:14px;">Premier échange gratuit, sans engagement. 07 69 82 68 09 · contact@webmatis.fr · webmatis.fr</p>
+  </div>
+</div>
+
+</body>
+</html>
