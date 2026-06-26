@@ -42,6 +42,13 @@ img{display:block;max-width:100%}
 .stat-num{font-family:var(--font-title);font-weight:700;font-size:clamp(2.1rem,3.4vw,2.9rem);line-height:1;color:var(--accent);margin-bottom:12px;}
 .stat-card p{font-size:.95rem;line-height:1.5;color:var(--ink-2);margin:0;}
 
+/* Badge "Le plus demandé" sur la carte Pack */
+.badge-most-wanted{
+  position:absolute;top:18px;right:18px;background:#fff;color:var(--accent);
+  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:6px 13px;border-radius:20px;
+}
+
 /* ===== Responsive ===== */
 @media (max-width:920px){
   .navlinks{display:none !important}
@@ -70,6 +77,9 @@ img{display:block;max-width:100%}
 @media (max-width:540px){
   .why-grid{grid-template-columns:1fr !important}
   .stats-grid{grid-template-columns:1fr !important}
+  .hero-cta{flex-wrap:wrap !important}
+  .hero-cta > a{flex:none !important;width:100%}
+  .badge-most-wanted{position:static;display:inline-block;margin-bottom:14px}
 }
 
 /* Burger (mobile uniquement) */
