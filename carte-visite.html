@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Carte de visite — Matis Percheron · webmatis.fr</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16181d;--ink-2:#5b6170;--line:#e3e7ee;--accent:#2563eb;--accent-2:#1d4ed8;
+    --title:'Space Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:#e9edf3;
+    -webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  .card{
+    width:85mm;height:55mm;background:#fff;margin:10px auto;
+    box-shadow:0 6px 20px -8px rgba(20,40,90,.4);position:relative;overflow:hidden;
+  }
+  /* ===== RECTO ===== */
+  .recto{padding:8mm 7mm;display:flex;flex-direction:column;justify-content:center;}
+  .recto .bar{position:absolute;left:0;top:0;bottom:0;width:3mm;background:var(--accent);}
+  .logo{font-family:var(--title);font-weight:700;font-size:17pt;letter-spacing:-.01em;color:var(--ink);margin:0;}
+  .logo .dot{color:var(--accent);}
+  .tagline{font-size:9pt;color:var(--ink-2);margin:3mm 0 0;line-height:1.4;}
+  .place{font-size:7.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:4mm 0 0;font-weight:600;}
+  /* ===== VERSO ===== */
+  .verso{padding:7mm;display:flex;align-items:center;justify-content:space-between;gap:5mm;}
+  .verso .coords{display:flex;flex-direction:column;gap:2.6mm;}
+  .verso .coords .row{display:flex;align-items:center;gap:2.2mm;font-size:8.5pt;color:var(--ink);}
+  .verso .coords .lab{font-size:6.5pt;color:var(--ink-2);text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:.5mm;}
+  .verso .site{font-family:var(--title);font-weight:600;color:var(--accent-2);}
+  .qr{width:20mm;height:20mm;flex:none;border:1px solid var(--line);border-radius:2mm;padding:1mm;}
+  .qr img{width:100%;height:100%;display:block;}
+  @media print{
+    body{background:#fff;}
+    .card{box-shadow:none;margin:0;}
+    .card.recto{page-break-after:always;}
+  }
+  @page{size:85mm 55mm;margin:0;}
+</style>
+</head>
+<body>
+
+<!-- ===================== RECTO ===================== -->
+<div class="card recto">
+  <span class="bar"></span>
+  <p class="logo">Matis Percheron<span class="dot">.</span></p>
+  <p class="tagline">Sites web &amp; visibilité Google<br>pour les commerces de Grenoble</p>
+  <p class="place">Grenoble &amp; agglomération</p>
+</div>
+
+<!-- ===================== VERSO ===================== -->
+<div class="card verso">
+  <div class="coords">
+    <div class="row"><div><span class="lab">Téléphone</span>07 69 82 68 09</div></div>
+    <div class="row"><div><span class="lab">Email</span>contact@webmatis.fr</div></div>
+    <div class="row"><div><span class="lab">Site</span><span class="site">webmatis.fr</span></div></div>
+  </div>
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=0&data=https://webmatis.fr" alt="QR webmatis.fr">
+  </div>
+</div>
+
+</body>
+</html>
